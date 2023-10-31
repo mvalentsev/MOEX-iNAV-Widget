@@ -30,7 +30,7 @@ const inavUpdate = value => {
         });
 }
 
-const checkSymbol = (e) => {
+const checkSymbol = e => {
     const target = e.target.closest('[data-symbol-id]');
     if (!target || !target.dataset.symbolId) return;
     const symbol = symbols.find(s => s.indexOf(target.dataset.symbolId) === 0);
