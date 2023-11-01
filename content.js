@@ -32,7 +32,7 @@ const inavUpdate = value => {
 
 const checkSymbol = e => {
     const notTarget = e.target.closest('[data-qa-tag]');
-    if (notTarget.dataset.qaTag === 'icon' || notTarget.dataset.qaTag === 'tabTitle') return;
+    if (notTarget && notTarget.dataset.qaTag === 'icon' || notTarget.dataset.qaTag === 'tabTitle') return;
     const target = e.target.closest('[data-symbol-id]');
     if (!target || !target.dataset.symbolId) return;
     const symbol = symbols.find(s => s.indexOf(target.dataset.symbolId) === 0);
