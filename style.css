@@ -1,1 +1,1 @@
-#moex-inav-widget{padding-left:1rem}#moex-inav-widget::before{content:attr(data-symbol)": "}#moex-inav-widget::after{content:attr(data-value)}
+#moex-inav-widget{padding-left:1rem;cursor:pointer}#moex-inav-widget.is-active{font-weight:700}#moex-inav-widget::before{content:attr(data-symbol)": "}#moex-inav-widget::after{content:attr(data-value)}
