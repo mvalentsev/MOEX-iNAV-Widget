@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "MOEX iNAV Widget",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Добавляет в Терминал Тинькофф Инвестиций виджет текущих значений расчетной цены инвестиционных паев (iNAV) Мосбиржи",
   "icons": {
     "16": "icon16.png",
@@ -10,7 +10,7 @@
     "128": "icon128.png"
   },
   "host_permissions": [
-    "https://*.tinkoff.ru/terminal/*"
+    "https://*.tbank.ru/terminal/*"
   ],
   "content_scripts": [
     {
@@ -21,7 +21,7 @@
         "content.js"
       ],
       "matches": [
-        "https://*.tinkoff.ru/terminal/*"
+        "https://*.tbank.ru/terminal/*"
       ],
       "run_at": "document_end"
     }
